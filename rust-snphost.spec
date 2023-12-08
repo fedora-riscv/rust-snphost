@@ -5,7 +5,7 @@
 
 Name:           rust-snphost
 Version:        0.1.2
-Release:        %autorelease
+Release:        %{autorelease}.rv64
 Summary:        Administrative utility for AMD SEV-SNP
 
 License:        Apache-2.0
@@ -13,7 +13,7 @@ URL:            https://crates.io/crates/snphost
 Source:         %{crates_source}
 
 # snphost is a tool using features specific to AMD EPYC processors (x86_64).
-ExclusiveArch:  x86_64
+ExclusiveArch:  x86_64 riscv64
 BuildRequires:  rust-packaging >= 21
 
 %global _description %{expand:
